@@ -2,18 +2,27 @@ body {
 	margin: 0;
 	padding: 0;
 }
+ul {
+	padding: 0;
+	margin: 0;
+}
 li {
-	font: bold 14px arial, sans-serif;
-	margin-right: 20px;
-	float: left;
-	width: 125px;
+	font: bold 14px "Century Gothic", sans-serif;
+	list-style: none;
 	text-align: center;
 }
 h3 {
 	font: bold 21px "Century Gothic", sans-serif;
 }
+h1 {
+	margin: 10px;
+	font: 50px "Century Gothic", sans-serif;
+}
 p {
 	font: 14px "Century Gothic", sans-serif;
+}
+i {
+	margin-right: 5px;
 }
 button, input {
 	outline: none;
@@ -21,20 +30,52 @@ button, input {
 .head {
 	background: #3c3c3c;
 	height: 75px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.phone {
+	color: #e9b637;
+}
+.search {
+	background: #3c3c3c;
+	height: 20px;
+	border: 1px solid white;
+	padding-left: 15px;
+	color: white;
+}
+.your-account li{
+	margin-right: 25px;
+	float: left;
 }
 .menu {
 	background: #f0f0f0;
 	height: 75px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-menu {
+	width: 475px;
+	font: bold 18px "Century Gothic", sans-serif;
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.main-menu li {
+	font: bold 18px "Century Gothic", sans-serif;
 }
 .slider {
 	background: #e9b637;
-	width: 925px;
+	width: 1000px;
 	height: 400px;
 	margin: 0px auto;
 	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 .box {
-	margin: 20px 0px;
+	margin: 25px 0px;
 	padding: 30px;
 	border-top: 1px solid rgba(0,0,0,0.25);
 	display: flex;
@@ -47,13 +88,18 @@ button, input {
 	justify-content: center;
 }
 .listbox-items {
-	list-style: none;
-	flex-direction: row;
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
 }
-.listbox-logos li {
-	list-style: none;
-	flex-direction: row;
-	margin: -5px;
+.listbox-items li {
+	width: 125px;
+}
+.listbox-logos {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .info {
 	width: 500px;
@@ -72,7 +118,7 @@ button, input {
 	border: 1px solid black;
 	text-align: center;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .btn:hover {
 	background: black;
@@ -84,26 +130,32 @@ button, input {
 }
 .logos {
 	width: 80px;
-	height: 25px;
-	margin: -15px;
-}
-.box-company {
-	display: flex;
-	justify-content: center;
 }
 .our-company {
 	background: #e7e7e7;
-	width: 550px;
+	width: 580px;
 	height: 400px;
-	padding: 25px;
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
+}
+.our-company li {
+	font: 14px "Century Gothic", sans-serif;
+	float: none;
+	width: 450px;
+	text-align: left;
+}
+.our-company li::before{
+	content: "•";
+	color: #e9b637;
+	font-size: 20px;
+	margin-left: -15px;
 }
 .contact-us {
 	background: #3c3c3c;
 	width: 300px;
 	height: 400px;
-	padding: 25px;
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
 }
@@ -120,7 +172,13 @@ button, input {
 	background: #e9b637;
 	border: none;
 	font: 18px "Century Gothic", sans-serif;
-	cursor: pointer; 
+	cursor: pointer;
+	transition: 0.3s; 
+}
+.contact-us button:hover {
+	background: white;
+	border: 1px solid #e9b637;
+	color: #e9b637;
 }
 .contact-us h3 {
 	color: white;
@@ -130,13 +188,37 @@ button, input {
 }
 .information {
 	background: #464646;
-	height: 300px;
+	height: 250px;
 	color: white;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.location {
+	width: 450px;
+}
+.location ul {
+	margin-top: 40px;
 }
 .root {
 	background: #3c3c3c;
-	height: 40px;
 	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social {
+	display: flex;
+	align-items: center;
+}
+.number {
+	font: bold 24px "Century Gothic", sans-serif;
+}
 
