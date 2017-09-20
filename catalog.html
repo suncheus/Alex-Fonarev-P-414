@@ -9,8 +9,7 @@
 <body>
 
 <!--             header             -->
-
-	<header>
+<header>
 		<div class="head">
 			<div class="wrap">
 				<h1>MAGNO</h1>
@@ -24,79 +23,84 @@
 		</div>
 		<div class="menu">
 			<ul class="main-menu">
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Контакты</li>
+					<li><a href="#" class="link black">Доставка</a></li>
+					<li><a href="#" class="link black">Гарантия</a></li>
+					<li><a href="#" class="link black">Контакты</a></li>
 			</ul>
-		</div>	
-	</header>
+		</div>
 
 <!--             body             -->
 
-	<div>
+	<div class="wrap">
 	<ul>
 		<li>Главная/</li>
 		<li>Каталог/</li>
 		<li>Моноблоки и ноутбуки</li>
 	</ul>
 	</div>
-	<div>
+	<div class="wrap">
 		<h3>Моноблоки и ноутбуки</h3>
-		<div>
-		<div>
-			<h3>Фильтр</h3>
+	</div>
+	<div class="filter-menu">
+		<div class="wrap">
+			<div class="filter-title">
+				<h3>Фильтр</h3>
+			</div>
+			<h4>СОРТИРОВКА</h4>
+			<ul>
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По популярности</li>
+			</ul>
+			<button></button>
+			<button></button>
 		</div>
-		<div>
+	</div>
+	<div class="wrap-filter">
+		<div class="filter-content">
 			<div>
 				<p>Стоимость</p>
 			</div>
 			<div>
 				<p>Производители</p>
 				<input type="checkbox" name="brand"> Lenovo 
-				<input type="checkbox" name="brand"> Acer <br>
+				<input type="checkbox" name="brand" checked> Acer <br>
 				<input type="checkbox" name="brand"> Philips
-				<input type="checkbox" name="brand"> HP
+				<input type="checkbox" name="brand" checked> HP
 			</div>
 			<div>
 				<p>Видеокарта</p>
-				<input type="radio" name="brand"> NVidia 
+				<input type="radio" name="brand" checked> NVidia 
 				<input type="radio" name="brand"> Встроенная <br>
 				<input type="radio" name="brand"> AMD
 			</div>
 			<div>
-				<button>Применить</button>
+				<button class="btn-action">Применить</button>
 				<p>Сбросить фильтр</p>
 			</div>
-			</div>
 		</div>
-		<div>
-			<div>
-				<h4>СОРТИРОВКА</h4>
-				<ul>
-					<li>По цене</li>
-					<li>По типу</li>
-					<li>По популярности</li>
-				</ul>
-				<button></button>
-				<button></button>
+		<div class="goods">
+			<div class="good">
+				<img src="images/goods/laptop-2.png">
+				<p>Ноутбук</p>
+				<p>11020 РУБ</p>
+				<button class="btn-action">В корзину</button>
 			</div>
-			<div>
-				<div>
-					<img src="" alt="">
-					<p>Ноутбук</p>
-					<p>11020 РУБ</p>
-					<button>В корзину</button>	
-				</div>
-				<div>
-					<img src="" alt="">
-					<p>Ноутбук</p>
-					<p>11020 РУБ</p>
-					<button>В корзину</button>	
-				</div>
+			<div class="good">
+				<img src="images/goods/laptop-2.png">
+				<p>Ноутбук</p>
+				<p>11020 РУБ</p>
+				<button class="btn-action">В корзину</button>
+			</div>
+			<div class="good">
+				<img src="images/goods/laptop-2.png">
+				<p>Ноутбук</p>
+				<p>11020 РУБ</p>
+				<button class="btn-action">В корзину</button>
 			</div>
 		</div>
 	</div>
-
+	
 <!--             footer             -->
 
 		<footer>
@@ -107,7 +111,7 @@
 				<p>Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15<br>
 				К 1 ОФИС 456
 				</p>
-				<p class="number">8-800-5000-616</p>
+				<p class="number"><a href="#" class="link white">8-800-5000-616</a></p>
 				<ul class="your-account">
 					<li><i class="fa fa-user"></i>Личный кабинет</li>
 					<li><i class="fa fa-shopping-cart"></i>Корзина</li>
@@ -115,9 +119,9 @@
 				</div>
 				<div class="map">
 				<ul class="main-menu">
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Контакты</li>
+					<li><a href="#" class="link white">Доставка</a></li>
+					<li><a href="#" class="link white">Гарантия</a></li>
+					<li><a href="#" class="link white">Контакты</a></li>
 				</ul>
 				<img src="images/map.png">
 				</div>
@@ -125,14 +129,12 @@
 		</div>
 		<div class="root">
 			<div class="wrap">
-				<div>
 				<p>Все права защищены 2017</p>
-				</div>
 				<div class="social">
-				<i class="fa fa-vk"></i>
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-instagram"></i>
+					<a href="http://www.vk.com" class="fa fa-vk link white"></a>
+					<a href="http://www.facebook.com" class="fa fa-facebook link white"></a>
+					<a href="http://www.twitter.com" class="fa fa-twitter link white"></a>
+					<a href="http://www.instagram.com" class="fa fa-instagram link white"></a>
 				</div>
 			</div>
 		</div>

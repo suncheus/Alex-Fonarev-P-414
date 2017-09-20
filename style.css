@@ -1,32 +1,27 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family:"Century Gothic", sans-serif;
 }
-ul {
-	padding: 0;
-	margin: 0;
-}
+ul { padding: 0; margin: 0; }
 li {
 	font: bold 14px "Century Gothic", sans-serif;
 	list-style: none;
 	text-align: center;
 }
-h3 {
-	font: bold 21px "Century Gothic", sans-serif;
-}
-h1 {
-	margin: 10px;
-	font: 50px "Century Gothic", sans-serif;
-}
-p {
-	font: 14px "Century Gothic", sans-serif;
-}
-i {
+h3 { font: bold 21px "Century Gothic", sans-serif; }
+h1 { margin: 10px; font: 50px "Century Gothic", sans-serif; }
+p { font: 14px "Century Gothic", sans-serif; }
+i { margin-right: 5px; }
+button, input {	outline: none; }
+.link {
+	text-decoration: none;
 	margin-right: 5px;
+	transition: 0.3s;
 }
-button, input {
-	outline: none;
-}
+.white { color: white; }
+.black { color: black; }
+.link:hover { color: #e9b637; }
 .head {
 	background: #3c3c3c;
 	height: 75px;
@@ -35,9 +30,7 @@ button, input {
 	justify-content: center;
 	align-items: center;
 }
-.phone {
-	color: #e9b637;
-}
+.phone { color: #e9b637; }
 .search {
 	background: #3c3c3c;
 	height: 20px;
@@ -64,9 +57,7 @@ button, input {
 	display: flex;
 	justify-content: space-between;
 }
-.main-menu li {
-	font: bold 18px "Century Gothic", sans-serif;
-}
+.main-menu li { font: bold 18px "Century Gothic", sans-serif; }
 .slider {
 	background: #e9b637;
 	width: 1000px;
@@ -92,9 +83,22 @@ button, input {
 	display: flex;
 	justify-content: space-between;
 }
-.listbox-items li {
-	width: 125px;
+.listbox-items li { width: 125px; }
+.circle {
+	width: 115px;
+	height: 115px;
+	margin-bottom: 10px;
+	border-radius: 65px;
+	border: 5px solid #e9b637;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
 }
+ul img { transform: scale(0.8); }
+.circle:hover img{ filter: brightness(5); }
+.circle:hover {	background: #e9b637; cursor: pointer;}
 .listbox-logos {
 	width: 1000px;
 	display: flex;
@@ -108,12 +112,15 @@ button, input {
 }
 .btns {
 	width: 200px;
-	margin: 15px 15px 0 0;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 .btn {
-	width: 175px;
+	width: 100%;
 	height: 35px;
-	margin-bottom: 25px;
 	background: white;
 	border: 1px solid black;
 	text-align: center;
@@ -124,13 +131,8 @@ button, input {
 	background: black;
 	color: #e9b637;
 }
-.icons {
-	width: 115px;
-	height: 115px;
-}
-.logos {
-	width: 80px;
-}
+.logos { width: 80px; transition: 0.3s;}
+.logos:hover { opacity: 0.5 }
 .our-company {
 	background: #e7e7e7;
 	width: 580px;
@@ -167,7 +169,8 @@ button, input {
 	color: white;
 	font: 15px "Century Gothic", sans-serif;
 }
-.contact-us button {
+.btn-action {
+	width: 100%;
 	height: 50px;
 	background: #e9b637;
 	border: none;
@@ -175,17 +178,13 @@ button, input {
 	cursor: pointer;
 	transition: 0.3s; 
 }
-.contact-us button:hover {
+.btn-action:hover {
 	background: white;
 	border: 1px solid #e9b637;
 	color: #e9b637;
 }
-.contact-us h3 {
-	color: white;
-}
-.contact-us p {
-	color: #777777;
-}
+.contact-us h3 { color: white; }
+.contact-us p { color: #777777; }
 .information {
 	background: #464646;
 	height: 250px;
@@ -194,9 +193,7 @@ button, input {
 	display: flex;
 	justify-content: center;
 }
-.location {
-	width: 450px;
-}
+.location {	width: 450px; }
 .location ul {
 	margin-top: 40px;
 }
@@ -214,11 +211,50 @@ button, input {
 	justify-content: space-between;
 	align-items: center;
 }
+.wrap-filter {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
 .social {
+	color: white;
 	display: flex;
 	align-items: center;
 }
-.number {
-	font: bold 24px "Century Gothic", sans-serif;
+.number { font: bold 24px "Century Gothic", sans-serif; }
+.filter-title {
+	width: 250px;
+	height: 50px;
+	padding: 0 25px;
+	background: #3c3c3c;
+	color: white;
+}
+.filter-content {
+	width: 250px;
+	height: 400px;
+	padding: 0 25px;
+	background: #464646;
+	color: white;
+}
+.filter-menu {
+	width: 100%;
+	background: #f0f0f0;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.goods { width: 700px; }
+.good {
+	width: 200px;
+	height: 260px;
+	border: 1px solid lightgrey;
+	padding: 20px 50px;
+	margin: 20px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
