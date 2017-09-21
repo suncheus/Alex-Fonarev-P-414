@@ -7,10 +7,12 @@ ul { padding: 0; margin: 0; }
 li {
 	font: bold 14px "Century Gothic", sans-serif;
 	list-style: none;
+	float: left;
 	text-align: center;
 }
-h3 { font: bold 21px "Century Gothic", sans-serif; }
-h1 { margin: 10px; font: 50px "Century Gothic", sans-serif; }
+h3 { font: bold 21px "Century Gothic", sans-serif; margin: 0; }
+h2 { margin: 0; }
+h1 { font: 50px "Century Gothic", sans-serif; margin: 0; }
 p { font: 14px "Century Gothic", sans-serif; }
 i { margin-right: 5px; }
 button, input {	outline: none; }
@@ -67,7 +69,7 @@ button, input {	outline: none; }
 }
 .box {
 	margin: 25px 0px;
-	padding: 30px;
+	padding: 25px 0 10px 0;
 	border-top: 1px solid rgba(0,0,0,0.25);
 	display: flex;
 	justify-content: center;
@@ -225,7 +227,7 @@ ul img { transform: scale(0.8); }
 .number { font: bold 24px "Century Gothic", sans-serif; }
 .filter-title {
 	width: 250px;
-	height: 50px;
+	height: 60px;
 	padding: 0 25px;
 	background: #3c3c3c;
 	color: white;
@@ -240,21 +242,29 @@ ul img { transform: scale(0.8); }
 .filter-menu {
 	width: 100%;
 	background: #f0f0f0;
-	height: 50px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.goods { width: 700px; }
+.goods { 
+	width: 700px; 
+	display: flex;
+	flex-wrap: wrap; 
+}
 .good {
 	width: 200px;
-	height: 260px;
+	height: 270px;
 	border: 1px solid lightgrey;
 	padding: 20px 50px;
-	margin: 20px;
-	float: left;
+	margin: 40px 0 0 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.catalog-menu li{
+	color: #a5a5a5;
+	font-weight: normal;
+	margin-right: 10px;
 }
 
