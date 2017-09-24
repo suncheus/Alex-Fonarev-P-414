@@ -15,14 +15,15 @@ h2 { margin: 0; }
 h1 { font-size: 50px; margin: 0; }
 i { margin-right: 5px; }
 button, input {	outline: none; }
-.link {
-	text-decoration: none;
-	transition: background 0.3s, opacity: 0.1s;
-}
+
+/*------------a------------*/
+
+.link {	text-decoration: none;transition:  0.3s; }
 .white { color: white; }
 .black { color: black; }
 .link:hover { color: #e9b637; }
 .link:active { opacity: 0.5; }
+
 .head {
 	background: #3c3c3c;
 	height: 75px;
@@ -111,6 +112,9 @@ ul img { transform: scale(0.8); }
 	width: 500px;
 	margin-right: 25px;
 }
+
+/*------------buttons------------*/
+
 .btns {
 	width: 200px;
 	height: 150px;
@@ -133,6 +137,30 @@ ul img { transform: scale(0.8); }
 	color: #e9b637;
 }
 .btn:active { opacity: 0.5; }
+.btn-nav { 
+	border: 1px solid lightgrey;
+	border-radius: 2px; 
+	background: none; 
+	color: lightgrey;
+	transition: 0.3s;
+}
+.btn-nav:hover { border: 1px solid #e9b637; color: #e9b637; }
+.btn-action {
+	width: 100%;
+	height: 50px;
+	background: #e9b637;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 0.5s; 
+}
+.btn-action:hover {
+	background: white;
+	border: 1px solid #e9b637;
+	color: #e9b637;
+}
+.btn-action:active { opacity: 0.5; }
+
 .logos { width: 80px; transition: 0.3s;}
 .logos:hover { opacity: 0.5 }
 .our-company {
@@ -170,21 +198,6 @@ ul img { transform: scale(0.8); }
 	padding-left: 15px;
 	color: white;
 }
-.btn-action {
-	width: 100%;
-	height: 50px;
-	background: #e9b637;
-	border: none;
-	font-size: 18px;
-	cursor: pointer;
-	transition: background 0.3s, color 0.3s, opacity  0.5s; 
-}
-.btn-action:hover {
-	background: white;
-	border: 1px solid #e9b637;
-	color: #e9b637;
-}
-.btn-action:active { opacity: 0.5; }
 .contact-us h3 { color: white; }
 .contact-us p { color: #777777; }
 .information {
@@ -233,6 +246,7 @@ ul img { transform: scale(0.8); }
 	padding: 0 25px;
 	background: #3c3c3c;
 	color: white;
+	line-height: 60px;
 }
 .filter-content {
 	width: 250px;
@@ -257,11 +271,40 @@ ul img { transform: scale(0.8); }
 	border: 1px solid lightgrey;
 	padding: 20px 50px;
 	margin: 40px 0 0 40px;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.catalog-menu li{
+.good span {
+	width: 75px;
+	height: 25px;
+	padding: 3px 6px 0 6px;
+	text-align: center;
+	background: #709f39;
+	color: white;
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.page-list {
+	width: 700px;
+	margin: 20px 0 10px 340px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.page-list .circle { 
+	width: 25px; 
+	height: 25px; 
+	border: 1px solid #e9b637;
+	margin: 5px;
+}
+.page-list .btn-nav {
+	width: 115px;
+	height: 30px;
+}
+.catalog-menu li {
 	color: #a5a5a5;
 	font-weight: normal;
 	margin-right: 10px;
