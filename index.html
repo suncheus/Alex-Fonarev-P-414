@@ -17,7 +17,7 @@
 				<p class="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</p>
 				<input type="text" name="search" class="search" placeholder="Поиск по сайту"><i class="fa fa-search"></i>
 				<ul class="your-account">
-					<li><i class="fa fa-user"></i>Личный кабинет</li>
+					<li><a href="#" onclick="show()" class="link white"><i class="fa fa-user"></i>Личный кабинет</a></li>
 					<li><i class="fa fa-shopping-cart"></i>Корзина</li>
 				</ul>
 			</div>
@@ -171,8 +171,8 @@
 				<h3>ПОЧТОВАЯ РАССЫЛКА</h3>
 				<p><b>Узнавайте первым о новостях, акциях и скидках интернет-магазина.</b></p>
 				<input type="email" name="email" class="email" placeholder="Ваш E-mail">
-				<p>Указанная информация не будет бередана третьим лицам. Вы можете отписаться от почтовой рассылке в любое время</p>
-				<button class="btn-action">Подписаться</button>
+				<p>Указанная информация не будет бередана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
+				<button class="btn-action" onclick="show_send()">Подписаться</button>
 			</div>
 		</div>
 
@@ -188,7 +188,7 @@
 					</p>
 					<p class="number"><a href="#" class="link white">8-800-5000-616</a></p>
 					<ul class="your-account">
-						<li><i class="fa fa-user"></i>Личный кабинет</li>
+						<li><a href="#" class="link white" onclick="show()"><i class="fa fa-user"></i>Личный кабинет</a></li>
 						<li><i class="fa fa-shopping-cart"></i>Корзина</li>
 					</ul>
 					</div>
@@ -213,6 +213,59 @@
 				</div>
 			</div>
 		</div>
-	</footer>	
+	</footer>
+
+
+
+	<div class="modal-window-log">
+		<a href="#" class="close-log" onclick="hide()"><i class="fa fa-times fa-2x"></i></a>
+		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+		<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПОРОЛЬ</p>
+		<form action="">
+			<input type="text" placeholder="ЛОГИН">
+			<input type="password" placeholder="ПАРОЛЬ">
+			<div class="remember">
+				<input type="checkbox">ЗАПОМНИТЕ МЕНЯ
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
+			</div>
+			<input type="submit" value="ВОЙТИ">
+		</form>
+	</div>
+	<div class="modal-window-send">
+		<a href="#" onclick="hide_send()" class="close"><i class="fa fa-times-circle fa-3x"></i></a>
+		<div class="your-data">
+			<div class="your-name">
+				<label for="">Ваше имя:</label>
+				<input type="text" placeholder="Представьтесь, пожалуйста">
+			</div>
+			<div class="your-email">
+				<label for="">Ваш e-mail:</label>
+				<input type="email" placeholder="Для отправки ответа">
+			</div>
+		</div>
+		<label for="">Текст письма:</label>
+		<textarea>В свободной форме</textarea>
+		<button></button>
+	</div>
+
+	<script>
+		function show(){
+			var t = document.querySelector(".modal-window-log");
+			t.style.display = "block";
+		}
+		function hide(){
+			var t = document.querySelector(".modal-window-log");
+			t.style.display = "none";
+		}
+
+		function show_send(){
+			var t = document.querySelector(".modal-window-send");
+			t.style.display = "block";
+		}
+		function hide_send(){
+			var t = document.querySelector(".modal-window-send");
+			t.style.display = "none";
+		}
+	</script>	
 </body>
 </html>
